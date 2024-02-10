@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Undergrad University Experience Survey</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Undergraduate University Experience Survey</h1>
+    <p id="description">This is a short survey for the general student's experience at/after university.</p>
+
+    <form id="survey-form" method="post" action=''>
+      <fieldset>
+        <label id="name-label" for="name">Enter Your Name: <input id="name" name="name" type="text" placeholder="Enter your name:" required /></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="Enter a valid email:" required /></label>
+        <label id="number-label" for="number">Time Spent at University (years): <input id="number" type="number" min="1" max="5" placeholder="Enter years spent in university:"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Housing type (required)</legend>
+        <label for="home-accommodation"><input id="home-accommodation" type="radio" name="accommodation" class="inline" value="home-accommodation" checked /> Lived at home</label>
+        <label for="student-accommodation"><input id="student-accommodation" type="radio" name="accommodation" value="student-accommodation" class="inline" /> Lived in student accommodation</label>
+      </fieldset>
+
+      <fieldset>
+        <legend id="further-study-legend">Will you remain at university to study futher?<legend>
+        <label id="further-study-label" for="further-study">
+            <select name="dropdown" id="dropdown">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="maybe">Maybe</option>
+            </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend id="interests-legend">Interests at University?</legend>
+        <input id="social-checkbox" value="social-clubs" class="inline" type="checkbox"/>Social clubs <br>
+        <input id="sports-checkbox" value="sports" class="inline" type="checkbox"/>Sports <br>
+        <input id="learning-checkbox" value="learning" class="inline" type="checkbox"/>Learning <br>
+      </fieldset>
+
+      <fieldset>
+        <label id="bio-label" for="bio">Optional Extra Information:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="If we have missed anything please provide more information (optional)"></textarea>
+        </label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
